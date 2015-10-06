@@ -1,6 +1,6 @@
 ## Sitemap Design Reflection
 
-![sitemap](imgs/2.3_sitemap.png)
+![alt text](imgs/2.3_sitemap.png)
 
 **What are the 6 Phases of Web Design?**
 **What is your site's primary goal or purpose? What kind of content will your site feature?**
