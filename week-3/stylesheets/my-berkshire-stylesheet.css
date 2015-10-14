@@ -96,3 +96,17 @@ section {
 .bord-b {border-bottom: 1px solid;}
 
 .descrip-size-sm {font-size: .8em;}
+
+/*Reflection
+
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+  Well first off an external stylesheet allows for the HTML and CSS code to be separate, as opposed to including the CSS in style tags, which can make the HTML doc too crowded. The CSS file should be stored in a 'stylesheets' or 'css' directory and be linked relatively in the HTML file within the <head> tag.
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+  The 'debug' trick used by J. Ky Marsh is really helpful for positioning and figuring out where each element is as well as its width and height. You give each element a class name of 'debug' and set its border to 1px solid red. What you end up seeing are a bunch of red boxes on the page that delineate the position of each element. There were times when we set some position of an element which ended up screwing up the positioning of another so we had to figure out what was causing that issue.
+What CSS did you use to modify the element style (like size, color, etc.)
+  We used numerous span tags to target specific elements to give unique CSS styling to, like the letters in the title and the descriptions under each link.
+Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
+  We used all classes because DBC has made it clear to use only classes (id's will be for js).
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+  I think we ended up having code that followed best practices because we used more semantic elemets like header, article, section, footer while they used a table and 'dl' for the footer, which is hard to follow and not semantic. */
+
