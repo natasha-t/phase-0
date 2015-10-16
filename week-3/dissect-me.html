@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dissect Me HTML </title>
+  <meta charset="UTF-8">
+</head>
+<body>
+    <header>The ramblings of a novice full-stack developer</header>
+    <nav>
+        <ul>
+            <li>Projects</li>
+            <li>About Me</li>
+            <li>Contact</li>
+            <li>Blog</li>
+        </ul>
+    </nav>
+
+<main>
+    <aside>
+      <h3> Archive </h3>
+      <ul>
+        <li><a href="git.html"> Git </a></li>
+        <li><a href="css-concepts.html"> CSS Concepts </a></li>
+        <li><a href="#"> Post 3 </a></li>
+        <li><a href="#"> Post 4 </a></li>
+        <li><a href="#"> Post 5 </a></li>
+        <li><a href="#"> Post 6 </a></li>
+        <li><a href="#"> Post 7 </a></li>
+      </ul>
+  </aside>
+
+  <h1>Everything You've Ever Wanted to Know About Version Control </h1>
+  <h2>(but were afraid to ask)</h2>
+  <h4>October 1st, 2015</h4>
+        <section>
+            <i>"Dude, suckin' at something is the first step to being sorta good at something."</i> Jake the Dog, from the catoon show "Adventure Time".
+        </section>
+
+    <article>
+    <p>
+        Hi! My name is Clinton Weber. I am happy that you are here to learn a few things about web development. Before we start diving into the technical jargon, here's a little bit about myself. I have recently enrolled in a program called Dev Bootcamp (DBC). DBC is a 19-week extensive program for folks who want to learn everything they can about what it takes to be a full-stack web developer. So as I write these blog posts, you can rest assure that I have just learned of these tidbits of information myself.
+    </p>
+    <p>
+        The question, "What is version control?", is something that's asked of us Island Foxes quite often; maybe for a good week now. I realize now, though, that this is a very important question! To fully analyze this quandry, or what I know of it, I must break a form of version control called "GitHub" into two parts: One is Git, a local user interface, and the other is GitHub, a cloud-based collaborative remote work space (www.github.com). These two components are integral to using GitHub to it's full potential. Here is a resource for installing Git: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here.</a>. After you do this sucessfully, go to <a href="http://www.github.com">here</a> and create a profile.
+    </p>
+    <p>
+        Still following? Great. Based on your sheer determination and will, you will learn to be a developer with me. Now that we are all set up, let's rock. Go to your profile on GitHub.com and select the plus sign next to your avatar. Click "New Repository." Fill in the required information, and consider whether you want this project to be opensource, or some other form of creative licensing. When your repository is created, look for the "HTTPS clone URL" on the right-hand side of the displayed repository. Copy-and-paste the URL and open Terminal (or whatever shell you prefer). Create a directory <i>(mkdir $)</i> and change to it <i>(cd $)</i>. To be able to edit your website, you need to clone your site locally (save it to your computer). Type <i>git clone</i> and then paste the URL after. Boom! Your site is now ready to be expertly edited, with help by Yours Truly.
+    </p>
+    <p>
+        Let's make the front page of your website. Create a new file within your brand new cloned directory. To make a new index file (which most websites need), type <i>touch index.html</i>. You already have Sublime installed (but in case you dont, go here: <a href="http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/getting_started/install.html"> here</a>). You can edit index.html by opening Sublime. A shortcut to do that - type <i>subl index.html</i>. I don't know how to input HTML code and not have it show up, so I'll have to come back another time to show you how to write HTML code into your website. This is good enough for now, let's publish!
+    </p>
+    <p>
+        It took me a while to get this part down, but now I feel pretty proficient in this matter. To add index.html to GitHub, we need to add it! Makes sense, right? Type <i>git add index.html</i>. To make sure this was done correctly, type <i>git status</i>. This next part is the beautiful part of GitHub. In order to do anything, you need to tell your compatriots what you did! No more guess work, baby, everyone is accountable for what they contribute to the project. To tell everyone what you did, you need to open up the commit editor. Do this by typing <i>"git commit -v"</i>. Sublime will open the file, and all you need to do is type <i>"Add index.html"</i>. Why not "<i>added index.html</i>?" Because it's impolite, thats why. Once you do this, all you need to do is push the changes to the world wide web! Type <i>git push</i> to upload everything you've done to GitHub. Once this is done, go to your repository and make sure everything worked. 70% of the time, this has worked for me, 100% of the time. Surf's up! Catch some digital waves!
+        </p>
+  </article>
+</main>
+    <footer><a href="http://tequatche.github.io/blog/index.html">Go Back</a></footer>
+</body>
+</html>
+
+<!--
+Reflection
+
+What HTML5 tags have you used in this challenge and continue to return to often? Why?
+  We made sure to use all the common semantic HTML5 elements including main, article, section, nav, aside, header, and footer. These all applied appropriately to the blog post layout.
+How do elements get laid out on a page? What is the order the browser uses to display elements?
+  Elements are laid out like a tree structure as defined by the Document Object Model. Starting from the DOCTYPE html tag, the browser is notified that the proceeding document is formatted in HTML. The head tag is then interpreted next, which includes meta data, links to external stylesheets, as well as the title tag, which displays text in the browser's tab. Following the head tag is the body tag which includes all the content, then the closing html tag ends the document.
+What did you learn about Sublime in this challenge? Do you think you'll create more handy snippets at a later date? What about research some shortcuts that already exist?
+  I learned about Sublime snippets which are useful because they provide shortcuts to writing out repeated code. I find snippets to be very handy so I'm sure I'll be using them in the future.
+-->
