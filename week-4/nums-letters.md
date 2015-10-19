@@ -1,4 +1,4 @@
-#Reflection
+#Summarize
 
 - What does puts do?
     - puts simply prints to the screen whatever is after written after it. For example, puts "hello" would put the word hello to the screen.
@@ -46,3 +46,25 @@
         <!-- 5256000.0 -->
         ```
 
+#Reflection
+- How does Ruby handle addition, subtraction, multiplication, and division of numbers?
+    - Ruby used the methods of '+', '-', '\*', and '/'' for addition, subtraction, multiplication, and division. You can perform any of those methods on numbers (integers or floats). For string values, however, only '+'' and '\*' can be used. If you wanted to combine a string and number, like printing a string out 5 times, you'd have to put the string first then the number and use '*'
+    ```ruby
+            puts "Natasha" * 5
+            <!-- NatashaNatashaNatashaNatashaNatasha -->
+    ```
+- What is the difference between integers and floats?
+    - An integer is a number without a decimal point like 0, -50, or 10000. A float is a number with a decimal like 9.25, 600.30.
+- What is the difference between integer and float division?
+    - Integer division will return an integer (rounded down) as an output. Float division will retain the decimal point.
+- What are strings? Why and when would you use them?
+    - Strings are letters or text written with quotation marks. You'd use them if you needed to the computer to recognize letters from the alphabet in your program.
+- What are local variables? Why and when would you use them?
+    - Local variables are variables that are defined within a program and are used for purposes specific to that program.Their scope or applicability or use is limited to within the program.
+- How was this challenge? Did you get a good review of some of the basics?
+    - This challenge was straightforward and easy to follow. It served as a good review of the basics. I also got to learn how to place code blocks in markdown which is nifty.
+
+#Links to Challenge Solutions
+[Defining variables](defining-variables.rb)
+[Simple String Methods](simple-string.rb)
+[Local Variables & Arithmetic](basic-math.rb)
