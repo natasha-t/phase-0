@@ -1,4 +1,4 @@
-#Summarize
+##Summarize
 
 - What does puts do?
     - puts simply prints to the screen whatever is after written after it. For example, puts "hello" would put the word hello to the screen.
@@ -7,9 +7,9 @@
 - What is the difference between float and integer division? How would you explain the difference to someone who doesn't know anything about programming?
     - The output of dividing two float numbers would include a decimal point, while dividing two integers would output a whole number rounded down or returns only an integer.
 
-##Mini Challenges
+**Mini Challenges**
 
-###Hours in year
+Hours in year
 
 ```ruby
 
@@ -26,9 +26,9 @@
         puts hours_in_year
 
         <!-- 8760.0  -->
-        ```
+```
 
-###Minutes in Decade
+Minutes in Decade
 
 ```ruby
 
@@ -44,9 +44,9 @@
         puts minutes_in_decade
 
         <!-- 5256000.0 -->
-        ```
+```
 
-#Reflection
+##Reflection
 - How does Ruby handle addition, subtraction, multiplication, and division of numbers?
     - Ruby used the methods of '+', '-', '\*', and '/'' for addition, subtraction, multiplication, and division. You can perform any of those methods on numbers (integers or floats). For string values, however, only '+'' and '\*' can be used. If you wanted to combine a string and number, like printing a string out 5 times, you'd have to put the string first then the number and use '*'
     ```ruby
@@ -64,7 +64,7 @@
 - How was this challenge? Did you get a good review of some of the basics?
     - This challenge was straightforward and easy to follow. It served as a good review of the basics. I also got to learn how to place code blocks in markdown which is nifty.
 
-#Links to Challenge Solutions
+**Links to Challenge Solutions**
 [Defining variables](defining-variables.rb)
 [Simple String Methods](simple-string.rb)
 [Local Variables & Arithmetic](basic-math.rb)
