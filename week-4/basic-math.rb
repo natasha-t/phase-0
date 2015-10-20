@@ -6,6 +6,7 @@ num2 = 23
 sum = num1 + num2
 difference = num1 - num2
 quotient = num1.to_f/num2.to_f
+# to_f converts integer to float
 product = num1 * num2
 modulus = num1 % num2
 
