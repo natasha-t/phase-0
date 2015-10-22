@@ -13,7 +13,7 @@
 #returns letter grade as a string based on average
 
 # I worked on this challenge [by myself, with: ].
-
+# by myself 
 
 # Your Solution Below
 
