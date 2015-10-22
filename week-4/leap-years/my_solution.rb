@@ -1,7 +1,7 @@
 # Leap Years
 
 # I worked on this challenge [by myself, with: ].
-
+# James Artz
 
 # Your Solution Below
 def leap_year?(year)
