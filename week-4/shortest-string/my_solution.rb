@@ -16,8 +16,8 @@
 
 #Your Solution Below
 def shortest_string(list_of_words)
-  list_of_words.each
-
+  p list_of_words.min_by(&:length)
 end
 
-shortest_string(["hello", "my"])
+
+shortest_string(["hello", "my", "earthlings"])
