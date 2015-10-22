@@ -5,6 +5,7 @@
 # is commented in the file.
 
 # I worked on this challenge [by myself, with: ].
+# Ryan Zell
 
 # 0. total Pseudocode
 # make sure all pseudocode is commented out!

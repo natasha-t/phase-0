@@ -1,7 +1,7 @@
 # Factorial
 
 # I worked on this challenge [by myself, with: ].
-
+# Ryan Zell
 
 # Your Solution Below
 
