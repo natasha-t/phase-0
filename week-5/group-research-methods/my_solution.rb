@@ -1,7 +1,7 @@
 # Research Methods
 
 # I spent [] hours on this challenge.
-# start 1:30pm
+# start 1 hour 10 min
 
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {
