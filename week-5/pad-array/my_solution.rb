@@ -1,9 +1,9 @@
 # Pad an Array
 
 # I worked on this challenge [by myself, with: ]
-
+# Shawn Spears
 # I spent [] hours on this challenge.
-
+# 45 minutes
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
