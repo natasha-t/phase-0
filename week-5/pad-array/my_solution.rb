@@ -89,8 +89,14 @@ our_array
 
 # 4. Reflection
 # Were you successful in breaking the problem down into small steps?
+    # We were successful in breaking the problem down into steps which helped with writing the methods out.
 # Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+    # Because our pseudocode was written well enough for both of us to understand exactly what the inputs and outputs were, writing the code out was pretty easy.
 # Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+    # We didn't get any Ruby errors, just that our initial solution printed on element more than the min_size (based on our initial while loop condition) so we adjusted the condition accordingly and it worked from there.
 # When you refactored, did you find any existing methods in Ruby to clean up your code?
+    # We found a method called .fill which filled the array using three arguments: a value to fill the array with, a starting point and end point.
 # How readable is your solution? Did you and your pair choose descriptive variable names?
+    # I'd say our variable names are pretty straightforward and clear
 # What is the difference between destructive and non-destructive methods in your own words?
+    # Destructive methods alter the original input while non-destructive methods make a copy of the original input and returns a new output. You can see if methods are destructive or non-destructive by running an array, for instance, through a method, then checking to see if the original array stayed the same or changed.
