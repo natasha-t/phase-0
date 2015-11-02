@@ -33,7 +33,7 @@ class Die
   end
 
   def roll
-    p rand(1..6)
+    p rand(1..sides)
   end
 end
 
