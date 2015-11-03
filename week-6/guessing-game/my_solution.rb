@@ -44,8 +44,6 @@
 #       p false
 #     end
 #   end
-
-
 # end
 
 
@@ -63,21 +61,18 @@ class GuessingGame
 
   def guess(guess)
     @guess = guess
-    if @guess > @answer
+    if guess > @answer
       p :high
-    elsif @guess < @answer
+    elsif guess < @answer
       p :low
-    elsif @guess == @answer
+    elsif guess == @answer
       p :correct
     end
-
-
   end
 
   def solved?
    p check_answer = @guess == @answer ? true : false
   end
-
 
 end
 
@@ -87,3 +82,7 @@ game.solved?
 
 
 # Reflection
+# Instance variables and methods are like the nouns and verbs that represent real-world objects (Class). They exist solely within a Class, therefore acting as characteristics and behaviors of that class object.
+# Instance variables are to be used within the methods of the Class you're creating. They allow for those methods to be used when that Class is being accessed.
+# Flow control in the case of Classes functions like flow control usually does, but just within the scope of the method in the Class, using instance variables. I tried using a ternary operator for the if elsif statements in the guess method, but there were issues with using symbols as outputs.
+#
