@@ -14,8 +14,9 @@
 # Check the called column for the number called.
   # target column (corresponding letter): indices [0]-[4]
   # target number: second-level indices [0]-[4]
-  # ex: board[0][3] = B71
-  # letter should correspond with board index value
+  # B = 0; I = 1; N = 2 G = 3; 0 = 4
+  # iterate through board array
+    # for each array's index value that corresponds to the letter called, check for the number
 
 # If the number is in the column, replace with an 'x'
   # replace that place in the board array with 'x'
@@ -29,6 +30,72 @@
 
 # Initial Solution
 
+# class BingoBoard
+
+#   def initialize(board)
+#     @bingo_board = board
+#   end
+
+#   def call
+#     @call = []
+#     @letters = ["B", "I", "N", "G", "O"]
+
+#     @call.push(@letters.sample).push(rand(1..100))
+
+#     p @call.join
+#   end
+
+#   def check
+#     @board_letter = @letters.index(@call[0])
+#     if @bingo_board[@board_letter].include?(@call[1])
+#         @bingo_board[@board_letter].map { |x| x == @call[1] ? "X" : x}.flatten
+#     else
+#       false
+#     end
+
+#     @show_board = @bingo_board.each { |line| p line }
+
+#   end
+# end
+
+# =========== Refactored Solution - Round 1 ==========
+# set up tests
+
+# class BingoBoard
+
+#   def initialize(board)
+#     @bingo_board = board
+#   end
+
+#   def call
+#     # @call = []
+#     @letters = ["B", "I", "N", "G", "O"]
+
+#     # @call.push(@letters.sample).push(rand(1..100))
+
+#     # p @call.join
+#      p @call_test = ["O", 51]
+#   end
+
+#   def check
+#     p @board_letter_test = @letters.index(@call_test[0])
+#     # p @board_letter = @letters.index(@call[0])
+#     @bingo_board.map { |row|
+#         if row[@board_letter_test] == @call_test[1]
+#           row[@board_letter_test] = "X"
+#         else
+#           false
+#         end
+#     }
+
+#     @show_board = @bingo_board.each { |line| p line }
+
+#   end
+
+# end
+
+# =========== Refactored Solution - Round 2 ===========
+
 class BingoBoard
 
   def initialize(board)
@@ -38,53 +105,22 @@ class BingoBoard
   def call
     @call = []
     @letters = ["B", "I", "N", "G", "O"]
-
     @call.push(@letters.sample).push(rand(1..100))
-
     p @call.join
+
   end
 
   def check
     @board_letter = @letters.index(@call[0])
-    if @bingo_board[@board_letter].include?(@call[1])
-        @bingo_board[@board_letter].map { |x| x == @call[1] ? "X" : x}.flatten
-    else
-      false
-    end
 
+    @bingo_board.map { |row| row[@board_letter] == @call[1] ? row[@board_letter] = "X" : false }
+
+    format = '%-4s %-3s %-3s %-3s %s'
+    puts format % ["B", "I", "N", "G", "O"]
     @show_board = @bingo_board.each { |line| p line }
 
   end
-end
 
-# Refactored Solution
-
-class BingoBoard
-
-  def initialize(board)
-    @bingo_board = board
-  end
-
-  def call
-    @call = []
-    @letters = ["B", "I", "N", "G", "O"]
-
-    @call.push(@letters.sample).push(rand(1..100))
-
-    p @call.join
-  end
-
-  def check
-    @board_letter = @letters.index(@call[0])
-    if @bingo_board[@board_letter].include?(@call[1])
-        @bingo_board[@board_letter].map { |x| x == @call[1] ? "X" : x}.flatten
-    else
-      false
-    end
-
-    @show_board = @bingo_board.each { |line| p line }
-
-  end
 end
 
 
