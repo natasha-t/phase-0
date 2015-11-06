@@ -101,7 +101,7 @@ class BingoBoard
   def check
     @board_letter = @letters.index(@call[0])
 
-    @bingo_board.map { |row| row[@board_letter] == @call[1] ? row[@board_letter] = "X" : false }
+    @bingo_board.map! { |row| row[@board_letter] == @call[1] ? row[@board_letter] = "X" : false }
   end
 
 end
