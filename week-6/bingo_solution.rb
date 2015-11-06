@@ -32,23 +32,18 @@
   #
 
 
-# Initial Solution
+# Initial Solution === Incorrect X placement
 
 # class BingoBoard
-
 #   def initialize(board)
 #     @bingo_board = board
 #   end
-
 #   def call
 #     @call = []
 #     @letters = ["B", "I", "N", "G", "O"]
-
 #     @call.push(@letters.sample).push(rand(1..100))
-
 #     p @call.join
 #   end
-
 #   def check
 #     @board_letter = @letters.index(@call[0])
 #     if @bingo_board[@board_letter].include?(@call[1])
@@ -56,31 +51,23 @@
 #     else
 #       false
 #     end
-
 #     @show_board = @bingo_board.each { |line| p line }
-
 #   end
 # end
 
-# =========== Refactored Solution - Round 1 ==========
-# set up tests
+# Refactored Solution Round 1 === Set up tests
 
 # class BingoBoard
-
 #   def initialize(board)
 #     @bingo_board = board
 #   end
-
 #   def call
 #     # @call = []
 #     @letters = ["B", "I", "N", "G", "O"]
-
 #     # @call.push(@letters.sample).push(rand(1..100))
-
 #     # p @call.join
 #      p @call_test = ["O", 51]
 #   end
-
 #   def check
 #     p @board_letter_test = @letters.index(@call_test[0])
 #     # p @board_letter = @letters.index(@call[0])
@@ -91,14 +78,11 @@
 #           false
 #         end
 #     }
-
 #     @show_board = @bingo_board.each { |line| p line }
-
 #   end
-
 # end
 
-# =========== Refactored Solution - Round 2 ===========
+# Refactored Solution - Round 2 == Make legal board
 
 class BingoBoard
 
@@ -118,11 +102,6 @@ class BingoBoard
     @board_letter = @letters.index(@call[0])
 
     @bingo_board.map { |row| row[@board_letter] == @call[1] ? row[@board_letter] = "X" : false }
-
-    # format = '%-4s %-3s %-3s %-3s %s'
-    # puts format % ["B", "I", "N", "G", "O"]
-
-    # show_board = @bingo_board.each {|line| p line}
   end
 
 end
@@ -158,6 +137,7 @@ new_game = BingoBoard.new(board)
 new_game.call
 new_game.check
 
+
 #Reflection
 =begin
 How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
@@ -169,7 +149,7 @@ How can you access coordinates in a nested array?
 What methods did you use to access and modify the array?
   I used map to search each array for the number called and place an "X" if the number is present. I used .map over .each because .each does not produce an output that can be saved.
 Give an example of a new method you learned while reviewing the Ruby docs. Based on what you see in the docs, what purpose does it serve, and how is it called?
-  I didn't really use any new methods for this challenge
+  I used the .zip method to combine the b-o arrays so that each array in board has one number from each letter. Then I used .shuffle to scrabmle the order.
 How did you determine what should be an instance variable versus a local variable?
   Instance variables were used within the bingoboard class. Local variables were used outside of the class
 What do you feel is most improved in your refactored solution?
