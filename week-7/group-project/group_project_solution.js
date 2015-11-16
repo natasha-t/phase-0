@@ -114,4 +114,6 @@ median([2,3,4,5,6])
 // Passed: recognized the sum and median functions as instances of a function.
 // Failed:
     // did not recognize the average function as it was looking for the word 'mean' as the function name.
-    // all other tests failed because the tests were looking for two arrays the functions worked with independently as inputs, one of odd length, as in there are an odd number of numbers like [1,2,3,4,5] and one of even length (an even number of numbers) like [1,2,3,4,5,6].
+    // all other tests failed because the tests were looking for two arrays the functions worked with independently as inputs, 
+        // one of odd length, as in there are an odd number of numbers like [1,2,3,4,5] and one of even length (an even number of numbers) 
+        // like [1,2,3,4,5,6].
