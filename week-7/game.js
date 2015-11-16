@@ -137,7 +137,7 @@
 //   }
 // };
 
-// Refactored Code
+// Refactored Code === work in progress; if statements are not fully functional with user input; also way too many alerts. Will turn alerts into html/jquery functions
 
 // Have displayStatus iterate through object
 // Let user specify quantity
@@ -239,6 +239,7 @@ var retrieveWater = function(character, waterWell, quantity) {
   alert("You, the almighty " + teaMaker.name + " have a water level of " + teaMaker.waterLevel);
 };
 
+// REALLY repeating myself here but got sick over the weekend so didn't have a chance to refactor fully
 
 var playGame = function(character) {
 
@@ -258,48 +259,18 @@ var playGame = function(character) {
   var quantity = parseInt(userInput);
   retrieveWater(character, waterWell, quantity);
 
-
-
 };
 
 playGame(teaMaker);
-
-
-//Function Calls
-// displayStatus(teaMaker);
-// var userInput = prompt("Please pick a quantity between 1 and 100");
-// var quantity = parseInt(userInput);
-
-// console.log(pullTeaLeaves(teaMaker, teaPlant, quantity));
-// console.log(displayStatus(teaMaker));
-
-// console.log(milkCow(teaMaker, cow, quantity));
-// // console.log(displayStatus(teaMaker));
-
-// console.log(extractSugarCaneJuice(teaMaker, sugarCane, 50));
-// // console.log(displayStatus(teaMaker));
-
-// console.log(retrieveWater(teaMaker, waterWell, 100));
-// console.log(displayStatus(teaMaker));
-
-// for (var prop in teaMaker) {
-//   if(teaMaker.hasOwnProperty(prop)) {
-//     if(teaMaker[prop] === 100) {
-//       console.log(prop + " is good to go!");
-//     };
-//   };
-// };
-
-
-
+displayStatus(teaMaker);
 
 
 // Reflection
-//
-//
-//
-//
-//
-//
-//
-//
+// What was the most difficult part of this challenge?
+    // I'd say the most difficult part was incorporating user input into the game; it involved accounting for various conditions that I didn't get a chance to fully code out, so the game is incomplete in that sense.
+// What did you learn about creating objects and functions that interact with one another?
+    // Once you have the objects created, it's fairly straightforward to make functions that interact with the objects and have the objects interact with each other. When putting all the individual functions into one playGame function, I had to keep track of the arguments for all the functions.
+// Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+    // My game is fairly simple so there weren't any fancy built-in JS methods used other than the almighty for loop and if/else statements. The for loop was used to display the status of the player in a presentable way.
+// How can you access and manipulate properties of objects?
+    // Accessing and maniplating properties of objects is similar to working with hashes in Ruby; you use the keys and values to do what you want to the objects.
