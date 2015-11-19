@@ -102,34 +102,34 @@ FOR each position in voteCount
 // Initial Solution
 
 
-for( var names in votes) {
-  for (var position in votes[names]) {
-    var ballotName = votes[names][position]
-    if(voteCount[position].hasOwnProperty(ballotName)) {
-      voteCount[position][ballotName] += 1;
-    } else {
-      voteCount[position][ballotName] = 1;
-    }
-  }
-}
+// for( var names in votes) {
+//   for (var position in votes[names]) {
+//     var ballotName = votes[names][position]
+//     if(voteCount[position].hasOwnProperty(ballotName)) {
+//       voteCount[position][ballotName] += 1;
+//     } else {
+//       voteCount[position][ballotName] = 1;
+//     }
+//   }
+// }
 
 
-for (var position in voteCount){
-  var maxVotes = 0;
-  var maxName = "";
+// for (var position in voteCount){
+//   var maxVotes = 0;
+//   var maxName = "";
 
-  for (var name in voteCount[position]){
-    if (maxVotes < voteCount[position][name]){
-        maxVotes = voteCount[position][name];
-        maxName = name;
-      }
-    }
+//   for (var name in voteCount[position]){
+//     if (maxVotes < voteCount[position][name]){
+//         maxVotes = voteCount[position][name];
+//         maxName = name;
+//       }
+//     }
 
-  officers[position] = maxName;
+//   officers[position] = maxName;
 
-}
+// }
 
-console.log(officers);
+// console.log(officers);
 
 // __________________________________________
 // Refactored Solution
