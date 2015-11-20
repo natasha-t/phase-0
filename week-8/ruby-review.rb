@@ -78,16 +78,16 @@ def assert
 end
 
 
-number = 44080412345678932
+number = 4408041234567901
 credit_card = CreditCard.new(number)
 
 number_2 = 1111111111111111
 credit_card_2 = CreditCard.new(number_2)
 
-
+assert { CreditCard.instance_method(:initialize).arity == 1 }
+assert { CreditCard.instance_method(:check_card).arity == 0}
 assert { credit_card.check_card == true }
-assert {credit_card_2.check_card == false }
-
+assert { credit_card_2.check_card == false }
 
 
 ######################################################
@@ -97,6 +97,9 @@ assert {credit_card_2.check_card == false }
 # 5. Reflection
 =begin
 What concepts did you review or learn in this challenge?
+  I learned how to build my own assert methods to test code from a previous challenge. I used the credit card validator code for testing. I wrote 3 tests. The first test checks if the CreditCard class is accepting one argument (the number). Second test checks if the check_card method returns true for credit_card. The third test checks if check_card on credit_card_2 returns false.
 What is still confusing to you about Ruby?
+  Since this was the first exercise to go over writing our own tests, I'd still need more practice on building tests. I still don't know how to make assert methods based on rspec tests since it would involve converting rspec specific matchers like expect.to into Ruby.
 What are you going to study to get more prepared for Phase 1?
+  To be more prepared for testing and TTD, I'm going to write more tests for previous challenges to get a better grasp of how tests work and what their extended uses can be beyond what was demonstrated in this challenge.
 =end
