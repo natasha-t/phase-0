@@ -41,7 +41,7 @@ bodyh1Element = $('body > h1');
 
     mascotImage.on('mouseleave', function(e){
     e.preventDefault()
-    $(this).attr('src', 'http://devbootcamp.com/assets/img/devbootcamp-logo-new.png')
+    $(this).attr('src', 'dbc_logo.png')
   })
 
 
