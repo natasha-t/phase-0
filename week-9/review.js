@@ -1,32 +1,3 @@
-// Guessing Game - Ruby
-
-// class GuessingGame
-//   def initialize(answer)
-//     @answer = answer
-
-//   end
-
-//   def guess(guess)
-//     @guess = guess
-//     if guess > @answer
-//       p :high
-//     elsif guess < @answer
-//       p :low
-//     elsif guess == @answer
-//       p :correct
-//     end
-//   end
-
-//   def solved?
-//    p check_answer = @guess == @answer ? true : false
-//   end
-
-// end
-
-// game = GuessingGame.new(10)
-// game.guess(10)
-// game.solved?
-
 
 // Guessing Game - Javascript
 
@@ -68,11 +39,13 @@ game.solved(guess);
 
 // Reflection
 // What concepts did you solidify in working on this challenge?
-    //
+    //It's now clear what the similarities are between Ruby classes and Javascript Constructor functions; they both build instances of an object that contain certain functionalities.
 // What was the most difficult part of this challenge?
+    // At first I wasn't sure how to share the data for guess between the functions in the GuessingGame object. In a Ruby class you'd set guess equal to an instance variable. Maybe there's a way to achieve something similar within the Javascript object, but I found that if you set guess equal to a number outside of the object then guess and solved will work as if an instance variable was used.
 // Did you solve the problem in a new way this time?
+    //It was essentially the same, just without the use of instance variables.
 // Was your pseudocode different from the Ruby version? What was the same and what was different?
-
+    //The pseudocode was bascially the same
 
 
 // Javascript Grocery List
@@ -121,19 +94,10 @@ function printList(list) {
 
 printList(groceryList);
 
-//Refactored Solution
-
-//use constructor function
-
-function GroceryList() {
-  var list = {};
-
-  this.addItem = function(item, quantity) {
-    list[item] = quantity;
-  }
-
-  return list;
-}
-
-groceryList = new GroceryList();
-groceryList.addItem("flour", 2);
+//Reflection
+// What concepts did you solidify in working on this challenge? (reviewing the passing of information, objects, constructors, etc.)
+    // The concepts were essentially the same in Javascript; make an empty object and create functions that add items to that object
+// What was the most difficult part of this challenge?
+    //This challenge was fairly easy since it's so similar to the Ruby version
+// Did an array or object make more sense to use and why?
+    //An object made more sense because you set the item as a property and quantity as it's value in the object
