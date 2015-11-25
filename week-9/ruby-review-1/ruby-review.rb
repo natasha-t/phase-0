@@ -139,5 +139,8 @@ wooden_spoon.clean
 # Reflection
 
 # What concepts did you review in this challenge?
+  # We reviewed debugging and analyzing errors in Ruby. We also clarified how attr_reader methods work.
 # What is still confusing to you about Ruby?
+  # Based on this challenge I feel pretty good about error handling
 # What are you going to study to get more prepared for Phase 1?
+  # I'm going to further study some more types of errors that can arise.
